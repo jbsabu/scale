@@ -1,0 +1,164 @@
+ 
+
+ @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+ body {
+  background-color: rgb(16, 16, 16);
+  background-image: url("../images/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+ }
+
+ 
+ h1,h2,h3,p {
+   color:ivory;
+
+  }
+
+
+h1,h2,h3 {
+  font-weight: 800;
+  font-family: 'Monoton', cursive;
+} 
+
+a:link,
+a:visited{
+  color: white;
+}
+
+a:hover{
+  color:red;
+  text-decoration: red;
+}
+
+h1{
+  font-size: clamp(35px,4vw,80px);
+
+
+}
+
+h2{
+font-size: clamp(25px,4vw,35px);
+  
+}
+
+h3{
+  font-size:clamp(25px,4vw,35px);
+  text-align: center;
+}
+
+/* h2.custom-h2{
+  color: green
+} */
+
+p{
+  font-size: clamp(15px,4vw,17px);
+  font-family: 'Space Mono', monospace;;
+}
+
+/* @keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
+
+
+/* 
+img {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 0;
+}
+*/
+/* img:hover {
+  transform: translateX(10px);
+  transform: rotate(1deg);
+  transform:scale(1.01);
+  filter: blur(3px)
+  
+} */
+ 
+
+main, section, footer {
+  width: 70% ;
+  margin: 0 auto;
+
+}
+
+section div{
+  background-color: rgba(28, 28, 28, 0);
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+} 
+
+
+section div h2 {
+  user-select: none;
+  color: rgb(235, 235, 235) 
+}
+
+@media (max-width: 768px){
+  .flex-container{
+    flex-direction:column;
+  }
+}
+
+.flex-container figure img:hover{
+  transform: scale(1.13);
+  filter: drop-shadow(10px 10px 30px rgba(255,255,255,0.2))
+}
+
+.flex-container figure img {
+  width:100%;
+  transition: transform 0.5s ease-in-out
+}
+
+section.container figure img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+section.container div {
+  width: 100%;
+  margin-bottom: 130px;
+}
+
+section.container figure {
+margin: 0;
+padding: 0;
+}
+
+.types-civilizations, .video {
+  margin-top: 10%;
+}
+
+section.container figure img:hover{
+
+  transform: scale(1px);
+  transform: rotate(1deg);
+  backdrop-filter: hue-rotate(173deg);;
+  opacity: .5;
+  filter: hue-rotate(-173deg);
+}
+
+section.container figure summary {
+  cursor: pointer;
+
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  
+}
